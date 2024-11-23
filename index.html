@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggiat IT - Penggiat Teknologi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="custom-cursor"></div>
+    <audio id="background-music" autoplay>
+        <source src="anything/five.mp3" type="audio/mpeg">
+        Tolong allow auto play audio yah!
+    </audio>
+    <header>
+        <nav>
+            <div class="logo">Risky Manuel T</div>
+            <ul class="nav-links">
+                <li><a href="#home">Rumah</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keterampilan</a></li>
+            </ul>
+            <button id="darkModeToggle" aria-label="Toggle dark mode">
+                <i data-lucide="moon"></i>
+            </button>
+            <button id="musicToggle" aria-label="Toggle music">
+                <i data-lucide="volume-2"></i>
+            </button>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="anything/kokok.png" alt="Profile Picture" class="profile-picture">
+                </div>
+                <h1>Kesadaraan Ancaman Dunia Siber</h1>
+                <div id="typed-strings">
+                    <p>Jangan Sebar Data Sembarangan</p>
+                    <p>Jangan Remehkan Ancaman Dunia Siber Sekecil Apapun</p>
+                    <p>Edukasi Orang-orang Terdekat Mu</p>
+                </div>
+                <span id="typed"></span>
+                <div class="cta-buttons">
+                    <a href="https://github.com/manuelky08" class="cta-button primary">Github</a>
+                    <a href="https://instagram.com/risky.manuel" class="cta-button secondary">Instagram</a>
+                </div>                
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Proyek Sederhana</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="anything/tools.png" alt="Tools">
+                    <h3>Tools Bawaan</h3>
+                    <p>Alat untuk memanggil secara otomatis tanpa harus mengetik manual, Jadi alat ini hanya untuk memanggil saja, Nah saya pakai distro parrot yang sudah disediakan berbagai alat hacking nah dari situ saya ciptakan alat otomatis.</p>
+                    <a href="https://github.com/ManuelKy08/Default-toolsR" class="project-link">Liat Aja</a>
+                </div>
+                <div class="project-card">
+                    <img src="anything/ngambil.png" alt="nyokot">
+                    <h3>Artikel Web</h3>
+                    <p>Alat osint yang secara sederhana mengumpulkan informasi penting di website berita.</p>
+                    <a href="https://github.com/ManuelKy08/Ngambil" class="project-link">Liat Aja</a>
+                </div>
+                <div class="project-card">
+                    <img src="anything/ngobrol.png" alt="pen punya pacar tapi kismin saya nya hmm">
+                    <h3>Chat Bot Offline</h3>
+                    <p>Alat ChatBot sederhana pertanyaan dan jawaban yang sudah di tentukan coder.</p>
+                    <a href="https://github.com/ManuelKy08/ngobrol" class="project-link">Liat Aja</a>
+                </div>
+                <div class="project-card">
+                    <img src="anything/yt.png" alt="youtube aja">
+                    <h3>URL YouTube Only</h3>
+                    <p>Sederhana nya adalah alat localhost atau offline yang bisa mengunduh mp3/mp4 tanpa ada halangan pop up malware/ads yang secara tiba-tiba muncul.</p>
+                    <a href="https://github.com/ManuelKy08/convert" class="project-link">Liat Aja</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="RR">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <img src="anything/kabogoh.jpeg" alt="About Me" class="about-image">
+                <div class="about-text">
+                    <p>Saya hanya haus akan teknologi saja yang sangat kepo terhadap berubahaan dunia dengan begitu saya mencoba untuk mengembangkan diri saya sendiri dengan berbagai cara.</p>
+                    <ul class="about-highlights">
+                        <li><i data-lucide="check-circle"></i> 5+ Ngulik IT</li>
+                        <li><i data-lucide="shuffle"></i> Saya tidak fokus pada satu bidang, sehingga terkadang menjadi kesulitan karena terlalu acak</li>
+                        <li><i data-lucide="laptop"></i> Saya mengasah kemampuan di Android saat ada waktu luang karena tidak banyak waktu di depan komputer</li>
+                        <li><i data-lucide="globe"></i> Memakai berbagai sumber yang ada dan tentunya gratis</li>
+                        <li><i data-lucide="heart"></i> Btw cewe yang di samping saya adalah reemar martin pacar hayalan saya haha</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i data-lucide="shield"></i>
+                    <h3>Keamanan Jaringan</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="code"></i>
+                    <h3>Keamanan Kode</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="eye"></i>
+                    <h3>Deteksi Ancaman</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 92%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="lock"></i>
+                    <h3>Enkripsi</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 88%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="hard-drive"></i>
+                    <h3>Keamanan Data</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 93%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="edit"></i>
+                    <h3>Desain</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 97%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Rumah</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keterampilan</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/risky-manuel/" class="social-icon linkedin" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="https://github.com/ManuelKy08" class="social-icon github" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="https://instagram.com/risky.manuel" class="social-icon instagram" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://x.com/risky_manuel" class="social-icon twitter" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; Created by kikikokok 2024 - 2025 aja yah hehe.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
