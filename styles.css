@@ -14,7 +14,7 @@
     --accent-color: #e74c3c;
     --text-color: #2c3e50;
     --background-color: #665e5e;
-    --card-background: #46e789;
+    --card-background: #97c5a9;
 }
 
 * {
@@ -37,33 +37,6 @@ body {
     height: 100%;
     z-index: -1;
 }
-
-#custom-cursor {
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    border-radius: 65%;
-    pointer-events: none;
-    z-index: 9999;
-    mix-blend-mode: difference;
-    transition: transform 0.1s ease;
-    animation: cursorBlink 1s infinite alternate, cursorColor 5s infinite;
-}
-
-@keyframes cursorBlink {
-    0% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
-
-@keyframes cursorColor {
-    0% { background-color: #ff0000; }
-    20% { background-color: #00ff00; }
-    40% { background-color: #0000ff; }
-    60% { background-color: #ffff00; }
-    80% { background-color: #00ffff; }
-    100% { background-color: #ff00ff; }
-}
-
 
 header {
     background-color: var(--primary-color);
@@ -152,41 +125,22 @@ section {
 }
 
 .profile-container {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 .profile-picture {
-    width: 250px;
-    height: 250px;
-    border-radius: 0%;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
     object-fit: cover;
-    border-radius: 0; 4px solid var(--secondary-color);
     transition: transform 0.3s ease;
+    margin: 0 auto;
 }
 
 .profile-picture:hover {
     transform: scale(1.05);
 }
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    animation: fadeInUp 1s ease;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    animation: fadeInUp 1s ease 0.2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-#typed {
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-}
-
 
 @keyframes fadeInUp {
     from {
@@ -242,7 +196,7 @@ section {
 }
 
 .social-icon {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--text-color);
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -267,7 +221,7 @@ h2 {
 
 .project-grid, .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -276,19 +230,19 @@ h2 {
     overflow: hidden;
     background-color: var(--card-background);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 100px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-7px);
+    box-shadow: 0 100px 70px rgba(0, 0, 0, 0.1);
 }
 
 .project-card img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -306,7 +260,7 @@ h2 {
     background-color: var(--secondary-color);
     color: var(--text-color);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 7px;
     transition: background-color 0.3s ease;
 }
 
@@ -315,15 +269,15 @@ h2 {
 }
 
 .skill-card i {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .skill-bar {
     background-color: var(--background-color);
-    height: 10px;
-    border-radius: 5px;
+    height: 13px;
+    border-radius: 7px;
     overflow: hidden;
     margin-top: 1rem;
 }
@@ -356,17 +310,22 @@ h2 {
 .about-highlights {
     list-style-type: none;
     margin-top: 1rem;
+    padding-left: 0;
 }
 
 .about-highlights li {
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
 .about-highlights i {
     color: var(--success-color);
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    flex-shrink: 0;
 }
 
 .testimonials {
@@ -388,12 +347,12 @@ h2 {
     background-color: var(--background-color);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .testimonial-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
 }
 
 .testimonial-author {
@@ -505,13 +464,52 @@ footer {
         max-width: 300px;
     }
 
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .profile-container {
+        margin-bottom: 2rem;
+    }
+
     .profile-picture {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-content {
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    #typed {
+        font-size: 1.2rem;
     }
 
     .cta-buttons {
         flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .about-highlights li {
+        align-items: flex-start;
+    }
+
+    .about-highlights i {
+        margin-top: 0.2rem;
     }
 }
 
+@media screen and (max-width: 480px) {
+    .profile-picture {
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
